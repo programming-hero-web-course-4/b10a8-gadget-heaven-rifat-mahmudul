@@ -18,9 +18,9 @@ const Nav = () => {
                         <div className="hidden lg:block">
                             <nav>
                                 <ul className="flex gap-8 font-semibold text-xl">
-                                    <NavLink className={({isActive}) => `${isActive ? 'text-black' : ''}`} to='/'>Home</NavLink>
-                                    <NavLink className={({isActive}) => `${isActive ? 'text-purple-600' : ''}`} to='/statistics'>Statistics</NavLink>
-                                    <NavLink className={({isActive}) => `${isActive ? 'text-purple-600' : ''}`} to='/dashboard'>Dashboard</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/'>Home</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/statistics'>Statistics</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/dashboard'>Dashboard</NavLink>
                                 </ul>
                             </nav>
                         </div>
