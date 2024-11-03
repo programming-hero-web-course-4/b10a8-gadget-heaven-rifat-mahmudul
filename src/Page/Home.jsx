@@ -1,8 +1,11 @@
+import Banner from "../components/Banner"
+import BannerImage from "../components/BannerImage"
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home Components</h1>
+            <Banner></Banner>
+            <BannerImage></BannerImage>
         </div>
     )
 }
