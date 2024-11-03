@@ -19,7 +19,10 @@ export const router = createBrowserRouter([
                     {
                         path : '/',
                         element : <AllGadgets></AllGadgets>,
-                        // loader : () => fetch('Data.json')
+                    },
+                    {
+                        path : '/category/:category',
+                        element : <AllGadgets></AllGadgets>,
                     }
                 ]
             },

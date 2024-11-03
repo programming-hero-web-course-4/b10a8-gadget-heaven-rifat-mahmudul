@@ -1,15 +1,30 @@
 import { useEffect, useState } from "react"
 import Card from "./Card";
+import { useParams } from "react-router-dom";
 
 const AllGadgets = () => {
 
     const [data, setData] = useState([]);
 
+    const {category} = useParams();
+    console.log(category)
+
     useEffect(() => {
-        fetch('Data.json')
+        fetch('/Data.json')
         .then(res => res.json())
-        .then(data => setData(data))
-    }, [])
+        .then(data => {
+            if(category){
+                const filteredData = data.filter(p => p.category === category);
+                setData(filteredData);
+            }
+            else{
+                setData(data);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    }, [category])
 
     return (
         <div className="grid gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
