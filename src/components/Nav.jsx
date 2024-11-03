@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <div className={`pt-2 px-2 ${location.pathname == '/' ? `border-t border-r border-l border-gray-300 rounded-t-xl` : ''} max-w-[90%] xl:max-w-[1200px] mx-auto mt-6`}>
             <header className="">
-                    <div className={`flex ${location.pathname == '/' ? `bg-purple-600 rounded-t-xl` : `bg-white text-black`}  justify-between items-center text-white pt-5 sm:px-10 px-4 rounded-t-xl`}>
+                    <div className={`flex ${location.pathname == '/' ? `bg-purple-600 rounded-t-xl` : `bg-white text-purple-600`}  justify-between items-center text-white pt-5 sm:px-10 px-4 rounded-t-xl`}>
                         <div>
                             <Link to='/' className="sm:text-3xl text-xl font-bold flex gap-0"><span>Gadget</span> <span className="text-black">Heaven</span></Link>
                         </div>

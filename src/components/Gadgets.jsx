@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import AllGadgets from "./AllGadgets"
 import Categories from "./Categories"
 

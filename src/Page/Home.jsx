@@ -3,6 +3,7 @@ import BannerImage from "../components/BannerImage"
 import Gadgets from "../components/Gadgets"
 
 const Home = () => {
+
     return (
         <div>
             <Banner></Banner>
