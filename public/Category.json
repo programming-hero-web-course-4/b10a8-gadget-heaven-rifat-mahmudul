@@ -1,0 +1,8 @@
+[
+    { "category": "Laptops", "product_id": "LAP001" },
+    { "category": "Phones", "product_id": "PHN001" },
+    { "category": "Accessories", "product_id": "ACC001" },
+    { "category": "Smart Watches", "product_id": "SWT001" },
+    { "category": "MacBook", "product_id": "MAC001" },
+    { "category": "iPhone", "product_id": "IPH001" }
+]

@@ -1,0 +1,156 @@
+[
+    {
+        "product_id": "LAP001",
+        "product_title": "Ultra Slim Laptop 14 inch",
+        "product_image": "https://i.ibb.co.com/sJ9Xj8W/laptop6.webp",
+        "category": "Laptops",
+        "price": 799,
+        "description": "A sleek and powerful laptop designed for productivity.",
+        "Specification": ["14-inch display", "8GB RAM", "256GB SSD", "Intel i5 processor"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "LAP002",
+        "product_title": "Gaming Laptop 15 inch",
+        "product_image": "https://i.ibb.co.com/1qvKX6c/laptop5.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "High-performance laptop built for gaming enthusiasts.",
+        "Specification": ["15.6-inch display", "16GB RAM", "512GB SSD", "NVIDIA GTX 1660 Ti"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "LAP003",
+        "product_title": "Business Laptop 13 inch",
+        "product_image": "https://i.ibb.co.com/j5JTQxb/laptop4.jpg",
+        "category": "Laptops",
+        "price": 950,
+        "description": "Compact laptop ideal for business professionals on the go.",
+        "Specification": ["13.3-inch display", "8GB RAM", "256GB SSD", "Intel i7 processor"],
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": "LAP004",
+        "product_title": "Convertible Laptop 12 inch",
+        "product_image": "https://i.ibb.co.com/c1RJKx2/laptop2.webp",
+        "category": "Laptops",
+        "price": 680,
+        "description": "Convertible laptop with touch screen functionality.",
+        "Specification": ["12.5-inch display", "4GB RAM", "128GB SSD", "Intel i3 processor"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "LAP005",
+        "product_title": "Budget Laptop 15 inch",
+        "product_image": "https://i.ibb.co.com/02JfWFF/laptop3.jpg",
+        "category": "Laptops",
+        "price": 550,
+        "description": "Affordable laptop with decent performance for everyday use.",
+        "Specification": ["15.6-inch display", "8GB RAM", "1TB HDD", "AMD Ryzen 3"],
+        "availability": true,
+        "rating": 4.0
+    },
+    {
+        "product_id": "LAP006",
+        "product_title": "Lightweight Ultrabook",
+        "product_image": "https://i.ibb.co.com/Ry332Rz/laptop1.jpg",
+        "category": "Laptops",
+        "price": 1050,
+        "description": "Ultra-portable laptop with long battery life.",
+        "Specification": ["13-inch display", "16GB RAM", "512GB SSD", "Intel i7 processor"],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": "PHN001",
+        "product_title": "Smartphone Pro Max",
+        "product_image": "https://i.ibb.co.com/YhzYN8W/phone1.jpg",
+        "category": "Phones",
+        "price": 999,
+        "description": "Flagship smartphone with top-tier features.",
+        "Specification": ["6.7-inch display", "128GB storage", "Triple Camera", "5G enabled"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "PHN002",
+        "product_title": "Budget Smartphone Lite",
+        "product_image": "https://i.ibb.co.com/N7jD27W/phone2.webp",
+        "category": "Phones",
+        "price": 300,
+        "description": "Affordable smartphone with good battery life.",
+        "Specification": ["6.1-inch display", "64GB storage", "Dual Camera", "4G enabled"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "ACC001",
+        "product_title": "Wireless Earbuds",
+        "product_image": "https://i.ibb.co.com/Jc0RBw6/Accessories1.jpg",
+        "category": "Accessories",
+        "price": 120,
+        "description": "Compact wireless earbuds with noise cancellation.",
+        "Specification": ["Bluetooth 5.0", "Noise-cancelling", "6-hour battery life"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "ACC002",
+        "product_title": "Portable Power Bank 10000mAh",
+        "product_image": "https://i.ibb.co.com/XpxyhNT/Accessories2.jpg",
+        "category": "Accessories",
+        "price": 60,
+        "description": "High-capacity power bank for charging on the go.",
+        "Specification": ["10000mAh capacity", "Dual USB ports", "Fast charging"],
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product_id": "SWT001",
+        "product_title": "Smart Watch Series 6",
+        "product_image": "https://i.ibb.co.com/Cwp3BxS/Smart-Watches.jpg",
+        "category": "Smart Watches",
+        "price": 400,
+        "description": "Advanced smart watch with health tracking features.",
+        "Specification": ["Heart rate monitor", "GPS", "Water-resistant", "Long battery life"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "SWT002",
+        "product_title": "Fitness Band Pro",
+        "product_image": "https://i.ibb.co.com/VQb9MvQ/Smart-Watches2.jpg",
+        "category": "Smart Watches",
+        "price": 150,
+        "description": "Fitness band with step and calorie tracking.",
+        "Specification": ["Step counter", "Calorie tracker", "Sleep monitoring", "Bluetooth connectivity"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "MAC001",
+        "product_title": "MacBook Pro 13 inch",
+        "product_image": "https://i.ibb.co.com/XZH5Tnm/MacBook1.jpg",
+        "category": "MacBook",
+        "price": 1300,
+        "description": "Powerful laptop designed for creative professionals.",
+        "Specification": ["13-inch Retina display", "8GB RAM", "256GB SSD", "Apple M1 chip"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "MAC002",
+        "product_title": "MacBook Air 13 inch",
+        "product_image": "https://i.ibb.co.com/zGJwWdL/MacBook2.jpg",
+        "category": "MacBook",
+        "price": 999,
+        "description": "Lightweight MacBook with long battery life.",
+        "Specification": ["13-inch Retina display", "8GB RAM", "256GB SSD", "Apple M1 chip"],
+        "availability": false,
+        "rating": 4.7
+    }
+]
