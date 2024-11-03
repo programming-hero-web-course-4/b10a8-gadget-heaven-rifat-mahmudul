@@ -1,12 +1,15 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import { IoCartOutline } from "react-icons/io5";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 
 const Nav = () => {
+
+    const location = useLocation();
+
     return (
                 <header className="max-w-[90%] xl:max-w-[1200px] mx-auto mt-6">
-                    <div className="flex bg-purple-600 justify-between items-center text-white py-5 border border-red-500 sm:px-10 px-4">
+                    <div className={`flex ${location.pathname == '/' ? `bg-purple-600` : `bg-white`}  justify-between items-center text-white py-5 border border-red-500 sm:px-10 px-4`}>
                         <div>
                             <h1 className="sm:text-3xl text-xl font-bold flex gap-0"><span>Gadget</span> <span className="text-black">Heaven</span></h1>
                         </div>
@@ -15,8 +18,8 @@ const Nav = () => {
                             <nav>
                                 <ul className="flex gap-8 font-semibold text-xl">
                                     <NavLink className={({isActive}) => `${isActive ? 'text-black' : ''}`} to='/'>Home</NavLink>
-                                    <NavLink to='/statistics'>Statistics</NavLink>
-                                    <NavLink to='/dashboard'>Dashboard</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-black' : ''}`} to='/statistics'>Statistics</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-black' : ''}`} to='/dashboard'>Dashboard</NavLink>
                                 </ul>
                             </nav>
                         </div>
