@@ -7,8 +7,6 @@ const Cart = () => {
     const {cart} = useContext(showContext);
     const totalCost = cart.reduce((total, product) => total + product.price, 0);
 
-    console.log(cart);
-
     return (
         <>
             <div className="max-w-[90%] xl:max-w-[1200px] mx-auto sm:flex items-center justify-between mt-8 mb-10">

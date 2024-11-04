@@ -30,7 +30,7 @@ const ShowProvider = ({children}) => {
         const isExist2 = cart.find(p => p.product_id == product.product_id);
 
         if(isExist){
-            toast.error('The item Already Added on Cart')
+            toast.error('The item Already Add Wishlist')
         }
 
         else if(isExist2){
