@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { showContext } from "../Provider/ShowProvider"
 import ShowCart from "./ShowCart";
 
@@ -6,6 +6,12 @@ const Cart = () => {
 
     const {cart} = useContext(showContext);
     const totalCost = cart.reduce((total, product) => total + product.price, 0);
+    const [sortedCart, setSortedCart] = useState([...cart]);
+    const handleSortByPrice = () => {
+        const sortedProducts = [...sortedCart].sort((a, b) => b.price - a.price);
+        setSortedCart(sortedProducts);
+        console.log('Hello World')
+    };
 
     return (
         <>
@@ -17,13 +23,15 @@ const Cart = () => {
                     <div className="flex gap-8 items-center">
                         <h1 className="font-bold text-2xl">Total Cost : {totalCost}</h1>
                         <div className="flex gap-8">
-                            <button className="py-2 px-5 border border-purple-600 text-center font-bold rounded-3xl text-purple-600">Sort by Price</button>
+                            <button onClick={handleSortByPrice} className="py-2 px-5 border border-purple-600 text-center font-bold rounded-3xl text-purple-600">Sort by Price</button>
                             <button className="py-2 px-5 bg-purple-600 text-white text-center font-bold rounded-3xl">Purchase</button>
                         </div>
                     </div>
             </div>
             <div>
-                {cart.map(product => <ShowCart key={product.product_id} product={product}></ShowCart>)}
+                {sortedCart.map(product => (
+                    <ShowCart key={product.product_id} product={product} />
+                ))}
             </div>
         </>
     )
