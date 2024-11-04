@@ -79,7 +79,7 @@
     {
         "product_id": "PHN002",
         "product_title": "Budget Smartphone Lite",
-        "product_image": "https://i.ibb.co.com/N7jD27W/phone2.webp",
+        "product_image": "https://i.ibb.co.com/bvLTJvd/phone1212.jpg",
         "category": "Phones",
         "price": 300,
         "description": "Affordable smartphone with good battery life.",
@@ -152,5 +152,27 @@
         "Specification": ["13-inch Retina display", "8GB RAM", "256GB SSD", "Apple M1 chip"],
         "availability": false,
         "rating": 4.7
+    },
+    {
+        "product_id": "IPH001",
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/pj7D26S/iphone1.jpg",
+        "category": "iPhone",
+        "price": 1099,
+        "description": "Flagship iPhone with advanced camera system.",
+        "Specification": ["6.1-inch display", "128GB storage", "Triple camera", "5G enabled"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "IPH002",
+        "product_title": "iPhone SE",
+        "product_image": "https://i.ibb.co.com/N7jD27W/phone2.webp",
+        "category": "iPhone",
+        "price": 499,
+        "description": "Compact iPhone with powerful performance.",
+        "Specification": ["4.7-inch display", "64GB storage", "Single camera", "4G enabled"],
+        "availability": false,
+        "rating": 4.4
     }
 ]
