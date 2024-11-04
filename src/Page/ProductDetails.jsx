@@ -2,8 +2,12 @@ import { useLoaderData, useParams } from "react-router-dom"
 import ReactStars from "react-rating-stars-component";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
+import { useContext } from "react";
+import { showContext } from "../Provider/ShowProvider";
 
 const ProductDetails = () => {
+
+    const {handleCart, handleWishlist} = useContext(showContext);
 
     const data = useLoaderData();
     const {product_id} = useParams();
@@ -11,8 +15,16 @@ const ProductDetails = () => {
     
     const {product_image, product_title, price, description, Specification, rating, availability} = product;
 
+    const addCart = (product) => {
+        handleCart(product);
+    }
+
+    const addWishlist = (product) => {
+        handleWishlist(product);
+    }
+
     return (
-        <section className=" mt-5">
+        <section className=" mt-5 pb-16 bg-[#F7F7F7]">
             <div className="bg-purple-600">
                 <div className="text-white text-center pb-32 max-w-[90%] xl:max-w-[1200px] mx-auto">
                     <h1 className="sm:text-5xl text-3xl font-bold sm:max-w-[80%] mx-auto pt-5">Product Details</h1>
@@ -55,8 +67,16 @@ const ProductDetails = () => {
                     </div>
 
                     <div className="mt-4 flex gap-5 items-center">
-                        <button className="bg-purple-600 py-2 px-5 rounded-3xl flex items-center gap-3 text-white font-bold">Add To Card <IoCartOutline></IoCartOutline></button>
-                        <button className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
+                        <button
+                        onClick={()=>addCart(product)}
+                        className="bg-purple-600 py-2 px-5 rounded-3xl flex items-center gap-3 text-white font-bold">
+                            Add To Card 
+                            <IoCartOutline></IoCartOutline>
+                        </button>
+
+                        <button 
+                        onClick={()=>addWishlist(product)}
+                        className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
                             <div>
                                 <MdOutlineFavoriteBorder></MdOutlineFavoriteBorder>
                             </div>

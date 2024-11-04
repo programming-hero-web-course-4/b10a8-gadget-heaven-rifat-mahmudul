@@ -7,6 +7,8 @@ import Statistics from "../Page/Statistics";
 import Dashboard from "../Page/Dashboard";
 import AllGadgets from "../components/AllGadgets";
 import ProductDetails from "../Page/ProductDetails";
+import Cart from "../components/Cart";
+import Wishlist from "../components/Wishlist";
 
 export const router = createBrowserRouter([
     {
@@ -33,7 +35,17 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/dashboard',
-                element : <Dashboard></Dashboard>
+                element : <Dashboard></Dashboard>,
+                children : [
+                    {
+                        path : '/dashboard',
+                        element : <Cart></Cart>
+                    },
+                    {
+                        path : '/dashboard/wishlist',
+                        element : <Wishlist></Wishlist>
+                    },
+                ]
             },
             {
                 path : '/cardDetails/:product_id',
