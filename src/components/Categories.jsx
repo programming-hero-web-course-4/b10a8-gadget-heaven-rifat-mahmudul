@@ -7,7 +7,7 @@ const Categories = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() =>{
-        fetch('Categories.json')
+        fetch('/Categories.json')
         .then(res => res.json())
         .then(data => setCategories(data))
     }, [])

@@ -85,7 +85,7 @@
         "description": "Affordable smartphone with good battery life.",
         "Specification": ["6.1-inch display", "64GB storage", "Dual Camera", "4G enabled"],
         "availability": true,
-        "rating": 4.2
+        "rating": 5
     },
     {
         "product_id": "ACC001",
@@ -129,7 +129,7 @@
         "description": "Fitness band with step and calorie tracking.",
         "Specification": ["Step counter", "Calorie tracker", "Sleep monitoring", "Bluetooth connectivity"],
         "availability": true,
-        "rating": 4.3
+        "rating": 5
     },
     {
         "product_id": "MAC001",
@@ -173,6 +173,6 @@
         "description": "Compact iPhone with powerful performance.",
         "Specification": ["4.7-inch display", "64GB storage", "Single camera", "4G enabled"],
         "availability": false,
-        "rating": 4.4
+        "rating": 5
     }
 ]

@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const {product_id} = useParams();
     const product = data.find(p => p.product_id == product_id);
     
-    const {product_image, product_title, price, description, Specification, rating} = product;
+    const {product_image, product_title, price, description, Specification, rating, availability} = product;
 
     return (
         <section className=" mt-5">
@@ -25,10 +25,12 @@ const ProductDetails = () => {
                     <img className="mx-auto rounded-lg sm:w-[300px] sm:h-[300px]" src={product_image} alt="" />
                 </div>
 
-                <div>
+                <div className="mt-5 sm:mt-0">
                     <h1 className="font-bold text-2xl">{product_title}</h1>
                     <p className="mt-3 mb-3 font-semibold">price : {price} tk</p>
-                    <button className="px-5 py-2 rounded-3xl border border-purple-600 text-purple-600 font-bold mb-3 bg-purple-200">In Stock</button>
+                    {
+                        availability ? <button className="px-5 py-2 rounded-3xl border border-purple-600 text-purple-600 font-bold mb-3 bg-purple-200">In Stock</button> : <button className="px-5 py-2 rounded-3xl border border-purple-600 text-purple-600 font-bold mb-3 bg-purple-200">Stock Out</button>
+                    }
                     <p className="text-gray-500 mb-3">{description}</p>
                     <p className="flex flex-col"> 
                         <span className="text-xl font-bold">Specification :</span> 
@@ -42,6 +44,7 @@ const ProductDetails = () => {
                         <div className="flex items-center gap-3">
                             <ReactStars
                             count={5}
+                            value={rating}
                             size={24}
                             activeColor="#ffd700"
                             />

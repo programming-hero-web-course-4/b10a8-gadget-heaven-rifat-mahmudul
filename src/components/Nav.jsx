@@ -27,15 +27,15 @@ const Nav = () => {
 
                         <div className="gap-5 text-black font-bold hidden lg:flex">
                             <div className="bg-white h-8 w-8 flex items-center justify-center rounded-full">
-                                <div>
+                                <button>
                                     <IoCartOutline className="mx-auto text-xl" />
-                                </div>
+                                </button>
                             </div>
 
                             <div className="bg-white h-8 w-8 flex items-center justify-center rounded-full">
-                                <div>
+                                <button>
                                     <MdOutlineFavoriteBorder className="mx-auto text-xl" />
-                                </div>
+                                </button>
                             </div>
                         </div>
 
