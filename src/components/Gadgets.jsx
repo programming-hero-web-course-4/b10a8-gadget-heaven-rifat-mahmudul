@@ -5,7 +5,7 @@ import Categories from "./Categories"
 const Gadgets = () => {
 
     return (
-        <div className="mt-16 max-w-[90%] xl:max-w-[1200px] mx-auto">
+        <div className="mt-16 max-w-[90%] xl:max-w-[1200px] mx-auto pb-10">
             <h1 className="text-center sm:text-4xl text-xl font-bold">Explore Cutting-Edge Gadgets</h1>
 
             <div className="sm:flex gap-10 mt-10">

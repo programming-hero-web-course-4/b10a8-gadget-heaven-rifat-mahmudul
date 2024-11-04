@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <div className="max-w-[90%] lg:max-w-6xl mt-16 mx-auto">
+        <div className="max-w-[90%] lg:max-w-6xl mt-10 mx-auto">
             <div className="border-b border-dotted border-gray-500 text-center pb-6">
                 <h1 className="font-bold text-3xl">Gadget Heaven</h1>
                 <p className="mt-2 text-gray-600">Leading the way in cutting-edge technology and innovation.</p>
