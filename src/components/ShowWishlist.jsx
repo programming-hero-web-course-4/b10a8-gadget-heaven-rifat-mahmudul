@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
 import { MdDeleteForever } from "react-icons/md";
+import { showContext } from "../Provider/ShowProvider";
 
 const ShowWishlist = ({product}) => {
+
+    const {handleDeleteItemWishlist} = useContext(showContext);
 
     const {product_image, product_title, price, description} = product;
 
@@ -21,9 +25,9 @@ const ShowWishlist = ({product}) => {
                     </div>
                 </div>
 
-                <div className="text-red-500 text-4xl">
+                <button onClick={() => handleDeleteItemWishlist(product)} className="text-red-500 text-4xl">
                     <MdDeleteForever></MdDeleteForever>
-                </div>
+                </button>
             </div>
         </div>
     )

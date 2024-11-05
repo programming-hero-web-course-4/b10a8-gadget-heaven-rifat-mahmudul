@@ -1,10 +1,14 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { showContext } from "../Provider/ShowProvider";
 import ShowWishlist from "./ShowWishlist";
 
 const Wishlist = () => {
 
-    const {wishlist} = useContext(showContext);
+    const {wishlist, setWishlist} = useContext(showContext);
+
+    useEffect(() => {
+        setWishlist(wishlist)
+    }, [wishlist]);
 
     return (
             <div>

@@ -27,20 +27,26 @@ const ShowProvider = ({children}) => {
     const handleWishlist = (product) => {
 
         const isExist = wishlist.find(p => p.product_id == product.product_id);
-        const isExist2 = cart.find(p => p.product_id == product.product_id);
 
         if(isExist){
             toast.error('The item Already Add Wishlist')
-        }
-
-        else if(isExist2){
-            toast.error('The item Already Added on Cart')
         }
 
         else{
             setWishlist([...wishlist, product]);
             toast.success('This item successfully added on wishlist');
         }
+    };
+
+    const handleDeleteItemCart = (product) => {
+        const remaining = cart.filter(p => p.product_id !== product.product_id);
+        setCart(remaining);
+        toast.error('This item successfully deleted');
+    }
+    const handleDeleteItemWishlist = (product) => {
+        const remaining = wishlist.filter(p => p.product_id !== product.product_id);
+        setWishlist(remaining);
+        toast.error('This item successfully deleted');
     }
 
     const show = {
@@ -48,7 +54,10 @@ const ShowProvider = ({children}) => {
         handleWishlist,
         cart,
         setCart,
-        wishlist
+        wishlist,
+        setWishlist,
+        handleDeleteItemCart,
+        handleDeleteItemWishlist
     }
 
     return (

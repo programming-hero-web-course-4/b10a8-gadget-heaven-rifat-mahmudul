@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { showContext } from "../Provider/ShowProvider"
 import ShowCart from "./ShowCart";
 import { useNavigate } from "react-router-dom";
@@ -8,11 +8,14 @@ const Cart = () => {
 
     const {cart, setCart} = useContext(showContext);
     const totalCost = cart.reduce((total, product) => total + product.price, 0);
-    const [sortedCart, setSortedCart] = useState([...cart]);
+    const [sortedCart, setSortedCart] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const navigate = useNavigate();
 
+    useEffect(() => {
+        setSortedCart(cart)
+    }, [cart]);
 
     const handleSortByPrice = () => {
         const sortedProducts = [...sortedCart].sort((a, b) => b.price - a.price);

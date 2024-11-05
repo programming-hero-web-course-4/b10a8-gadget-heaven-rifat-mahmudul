@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 
+import { useContext } from "react";
 import { MdDeleteForever } from "react-icons/md";
+import { showContext } from "../Provider/ShowProvider";
 
 const ShowCart = ({product}) => {
 
+    const {handleDeleteItemCart} = useContext(showContext);
     const {product_image, product_title, price, description} = product;
 
     return (
@@ -22,9 +25,11 @@ const ShowCart = ({product}) => {
                     </div>
                 </div>
 
-                <div className="text-red-500 text-4xl">
+                <button 
+                onClick={() => handleDeleteItemCart(product)}
+                className="text-red-500 text-4xl">
                     <MdDeleteForever></MdDeleteForever>
-                </div>
+                </button>
             </div>
         </div>
     )
