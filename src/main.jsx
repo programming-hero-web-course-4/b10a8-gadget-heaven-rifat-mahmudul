@@ -5,13 +5,16 @@ import { RouterProvider } from 'react-router-dom'
 import { router } from './Routes/Router.jsx'
 import ShowProvider from './Provider/ShowProvider.jsx'
 import { Toaster } from 'react-hot-toast';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ShowProvider>
-      <RouterProvider router={router} />
-      <Toaster />
-    </ShowProvider>
+    <HelmetProvider>
+      <ShowProvider>
+        <RouterProvider router={router} />
+        <Toaster />
+      </ShowProvider>
+    </HelmetProvider>
   </StrictMode>,
 )

@@ -4,6 +4,7 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { showContext } from "../Provider/ShowProvider";
+import { Helmet } from "react-helmet-async";
 
 const ProductDetails = () => {
 
@@ -27,6 +28,9 @@ const ProductDetails = () => {
 
     return (
         <section className=" mt-5 pb-16 bg-[#F7F7F7]">
+            <Helmet>
+                <title>Gadget Heaven || Product Details</title>
+            </Helmet>
             <div className="bg-purple-600">
                 <div className="text-white text-center pb-32 max-w-[90%] xl:max-w-[1200px] mx-auto">
                     <h1 className="sm:text-5xl text-3xl font-bold sm:max-w-[80%] mx-auto pt-5">Product Details</h1>

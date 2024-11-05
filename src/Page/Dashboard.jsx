@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
@@ -5,6 +6,9 @@ const Dashboard = () => {
 
   return (
     <section className="bg-[#F7F7F7]">
+      <Helmet>
+          <title>Gadget Heaven || Dashboard</title>
+      </Helmet>
       <div className="bg-purple-600 pt-5 pb-7">
         <div className="text-white text-center">
           <h1 className="sm:text-5xl text-3xl font-bold sm:max-w-[80%] mx-auto">Dashboard</h1>
