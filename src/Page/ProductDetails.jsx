@@ -39,7 +39,7 @@ const ProductDetails = () => {
 
                 <div className="mt-5 sm:mt-0">
                     <h1 className="font-bold text-2xl">{product_title}</h1>
-                    <p className="mt-3 mb-3 font-semibold">price : {price} tk</p>
+                    <p className="mt-3 mb-3 font-semibold">price : {price} $</p>
                     {
                         availability ? <button className="px-5 py-2 rounded-3xl border border-purple-600 text-purple-600 font-bold mb-3 bg-purple-200">In Stock</button> : <button className="px-5 py-2 rounded-3xl border border-purple-600 text-purple-600 font-bold mb-3 bg-purple-200">Stock Out</button>
                     }

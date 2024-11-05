@@ -10,7 +10,6 @@ const Cart = () => {
     const handleSortByPrice = () => {
         const sortedProducts = [...sortedCart].sort((a, b) => b.price - a.price);
         setSortedCart(sortedProducts);
-        console.log('Hello World')
     };
 
     return (

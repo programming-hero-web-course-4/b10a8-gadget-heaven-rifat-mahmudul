@@ -17,7 +17,7 @@ const ShowWishlist = ({product}) => {
                     <div>
                         <h1 className="font-bold text-xl">{product_title}</h1>
                         <p className="text-gray-500 mt-3 mb-3">{description}</p>
-                        <p className="font-semibold">Price : {price}</p>
+                        <p className="font-semibold">Price : {price} $</p>
                     </div>
                 </div>
 
