@@ -1,7 +1,7 @@
 # 🌌 Gadget Heaven 🌌
 Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts to explore, filter, and buy their favorite gadgets with ease.
 
-![Gadget Heaven Banner](./assets/gadgets.webp) 
+[./assets/gadgets.webp]
 
 ## 📜 Project Overview
 
@@ -15,10 +15,10 @@ Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts t
 - **Responsive Layout:** Fully responsive design ensuring a great experience across devices.
 
 ### 🚀 Live Demo
-[Visit Gadget Heaven](https://your-live-website.com)
+[https://gadgetworld.surge.sh/]
 
 ### 📄 Requirement Document
-[View Full Requirements](file:///C:/Users/mahmu/Desktop/B10-A8-gadget-heaven-main/Batch-10_Assignment-08.pdf) 
+[file:///C:/Users/mahmu/Desktop/B10-A8-gadget-heaven-main/Batch-10_Assignment-08.pdf] 
 
 ## 🛠️ Tech Stack & Key Libraries
 
