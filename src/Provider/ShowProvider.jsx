@@ -47,6 +47,7 @@ const ShowProvider = ({children}) => {
         handleCart,
         handleWishlist,
         cart,
+        setCart,
         wishlist
     }
 
