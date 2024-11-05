@@ -7,7 +7,7 @@ import { showContext } from "../Provider/ShowProvider";
 
 const ProductDetails = () => {
 
-    const {handleCart, handleWishlist} = useContext(showContext);
+    const {handleCart, handleWishlist, wishlist} = useContext(showContext);
 
     const data = useLoaderData();
     const {product_id} = useParams();
@@ -76,7 +76,10 @@ const ProductDetails = () => {
 
                         <button 
                         onClick={()=>addWishlist(product)}
-                        className="h-8 w-8 rounded-full border border-black flex items-center justify-center">
+                        disabled = {wishlist.length > 0}
+                        className={`py-2 px-5 text-center font-bold rounded-3xl ${
+                            wishlist.length > 0 ? "bg-gray-400 text-white" : "bg-purple-600 text-white"
+                        }`}>
                             <div>
                                 <MdOutlineFavoriteBorder></MdOutlineFavoriteBorder>
                             </div>
