@@ -23,6 +23,7 @@ const Nav = () => {
                             <nav>
                                 <ul className="flex gap-8 font-semibold text-xl">
                                     <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/'>Home</NavLink>
+                                    <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/aboutUs'>About Us</NavLink>
                                     <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/statistics'>Statistics</NavLink>
                                     <NavLink className={({isActive}) => `${isActive ? 'text-white bg-black py-2 px-5 rounded-lg' : 'py-2 px-5 rounded-lg'}`} to='/dashboard'>Dashboard</NavLink>
                                 </ul>

@@ -10,6 +10,7 @@ import ProductDetails from "../Page/ProductDetails";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import Error from "../Page/Error";
+import AboutUs from "../Page/AboutUs";
 
 export const router = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
                 path : '/cardDetails/:product_id',
                 element: <ProductDetails></ProductDetails>,
                 loader : () => fetch('/Data.json')
+            },
+            {
+                path : '/aboutUs',
+                element : <AboutUs></AboutUs>
             }
         ]
     },
