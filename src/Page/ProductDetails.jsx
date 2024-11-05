@@ -15,6 +15,8 @@ const ProductDetails = () => {
     
     const {product_image, product_title, price, description, Specification, rating, availability} = product;
 
+    const isInWishlist = wishlist.some(item => item.product_id === product.product_id);
+
     const addCart = (product) => {
         handleCart(product);
     }
@@ -76,9 +78,9 @@ const ProductDetails = () => {
 
                         <button 
                         onClick={()=>addWishlist(product)}
-                        disabled = {wishlist.length > 0}
+                        disabled = {isInWishlist}
                         className={`py-2 px-5 text-center font-bold rounded-3xl ${
-                            wishlist.length > 0 ? "bg-gray-400 text-white" : "bg-purple-600 text-white"
+                            isInWishlist ? "bg-gray-400 text-white" : "bg-purple-600 text-white"
                         }`}>
                             <div>
                                 <MdOutlineFavoriteBorder></MdOutlineFavoriteBorder>
