@@ -1,7 +1,7 @@
 # 🌌 Gadget Heaven 🌌
 Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts to explore, filter, and buy their favorite gadgets with ease.
 
-[./assets/gadgets.webp]
+![Gadget Heaven Banner](./assets/banner.jpg)
 
 ## 📜 Project Overview
 
@@ -18,7 +18,7 @@ Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts t
 [https://gadgetworld.surge.sh/]
 
 ### 📄 Requirement Document
-[file:///C:/Users/mahmu/Desktop/B10-A8-gadget-heaven-main/Batch-10_Assignment-08.pdf] 
+[B10-A8-gadget-heaven-main/Batch-10_Assignment-08.pdf] 
 
 ## 🛠️ Tech Stack & Key Libraries
 
