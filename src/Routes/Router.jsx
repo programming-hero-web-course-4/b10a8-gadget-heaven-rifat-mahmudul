@@ -9,11 +9,13 @@ import AllGadgets from "../components/AllGadgets";
 import ProductDetails from "../Page/ProductDetails";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import Error from "../Page/Error";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement : <Error></Error>,
         children : [
             {
                 path: '/',
