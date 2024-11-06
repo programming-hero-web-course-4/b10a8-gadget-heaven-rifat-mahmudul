@@ -1,7 +1,7 @@
 # 🌌 Gadget Heaven 🌌
 Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts to explore, filter, and buy their favorite gadgets with ease.
 
-![Gadget Heaven Banner](./assets/banner.jpg)
+![Gadget Heaven Banner](https://i.ibb.co.com/zxQbGST/banner.jpg)
 
 ## 📜 Project Overview
 
