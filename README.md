@@ -18,7 +18,7 @@ Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts t
 [https://gadgetworld.surge.sh/]
 
 ### 📄 Requirement Document
-<a href="file:///C:/Users/mahmu/Desktop/B10-A8-gadget-heaven-main/Batch-10_Assignment-08.pdf" target="blank">All Requirement<a>
+[PDF File](https://drive.google.com/file/d/14AWvaEjVXrwU3NX0iJFTseKotqoF45cX/view)
 
 ## 🛠️ Tech Stack & Key Libraries
 
