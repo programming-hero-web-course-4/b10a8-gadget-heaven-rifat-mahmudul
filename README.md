@@ -15,7 +15,7 @@ Welcome to **Gadget Heaven** – the ultimate destination for tech enthusiasts t
 - **Responsive Layout:** Fully responsive design ensuring a great experience across devices.
 
 ### 🚀 Live Demo
-[https://gadgetworld.surge.sh/]
+[Explore live site](https://gadgetvillage.surge.sh/)
 
 ### 📄 Requirement Document
 [PDF File](https://drive.google.com/file/d/14AWvaEjVXrwU3NX0iJFTseKotqoF45cX/view)
