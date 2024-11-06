@@ -1,11 +1,15 @@
 import gadgetsImage from '../assets/gadgets.webp'
 import img1 from '../assets/ceo1.jpg'
 import img2 from '../assets/ceo2.jpg'
+import { Helmet } from 'react-helmet-async'
 
 const AboutUs = () => {
     return (
         
             <section className="bg-[#F7F7F7] pb-16">
+                <Helmet>
+                <title>Gadget Heaven || About Us</title>
+                </Helmet>
                 <div className="bg-purple-600 pt-5 pb-40">
                     <div className="text-white text-center">
                         <h1 className="sm:text-5xl text-3xl font-bold sm:max-w-[80%] mx-auto">About Us</h1>
